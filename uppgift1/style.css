@@ -5,7 +5,7 @@ font-family: 'Roboto Slab', serif;
 /*
 
 
-/* mobile first - Srandard styling */
+/* mobile first - Standard styling */
 * {
     box-sizing: border-box;
 }
@@ -91,6 +91,7 @@ a:hover {
 
 
 
+
     /* Main Menu */
 
     #mainmenu {
@@ -144,3 +145,17 @@ a:hover {
     }
     @media (min-width: 992px) { #mainmenu .container .menu button { display: none;}}
     
+
+
+
+
+    /* services */
+    #services {
+        background: #f7f7f7;
+    }
+    
+    #services .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
