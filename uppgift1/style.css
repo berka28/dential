@@ -150,12 +150,50 @@ a:hover {
 
 
     /* services */
+    .service-box {
+        background: #ffffff;
+    }
     #services {
         background: #f7f7f7;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
-    
+
     #services .container {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
+        text-align: center;
+        
+        gap: 1rem;
     }
+    @media (min-width: 992px){
+        #services .container{ 
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:  "ti ti ti"
+                                  "b1 b2 b3"
+                                  "b4 b5 b6";    
+    }
+}
+
+#service-title {
+    grid-area: ti;
+}
+#service-box-1 {
+    grid-area: b1;
+}
+#service-box-2 {
+    grid-area: b2;
+}
+#service-box-3 {
+    grid-area: b3;
+}
+#service-box-4 {
+    grid-area: b4;
+}
+#service-box-5 {
+    grid-area: b5;
+}
+#service-box-6 {
+    grid-area: b6;
+}
