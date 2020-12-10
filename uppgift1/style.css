@@ -14,6 +14,7 @@ html, body {
     margin: 0;
     font-family:'Roboto', sans-serif;
     line-height: 1.5;
+    
 }
 
 .container {
@@ -44,10 +45,7 @@ a:hover {
     border: 1px solid transparent;
     background-color: transparent;
     font-size: 1rem;
-
 }
-
-
 
 
 
@@ -87,8 +85,6 @@ a:hover {
     #topmenu .container .socialmedia li {
         margin-left: 1.3rem;
     }
-
-
 
 
 
@@ -147,7 +143,41 @@ a:hover {
     
 
 
+    /* Showcase */
 
+    #showcase {
+        background-color: #DEDEDE;
+    }
+
+    #showcase .container {
+        font-family: 'Roboto Slab', serif;
+        padding-top: 1.375rem;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 9.375rem; 
+        align-items: center;
+        }
+        @media (min-width: 992px){
+            #showcase .container{ 
+            grid-template-columns: 1fr 1fr;}    
+        }
+
+        .figure1 {
+            display: none;
+            margin-left: -3rem; 
+        }
+        @media (min-width:992px){.figure1{display: block;}}
+
+        .about{
+            text-align: left;
+        }
+
+
+
+    /* About us */
+    
+    
 
     /* services */
     .service-box {
@@ -197,3 +227,11 @@ a:hover {
 #service-box-6 {
     grid-area: b6;
 }
+
+
+
+/* Appointment /*
+
+
+
+/* Footer /*
