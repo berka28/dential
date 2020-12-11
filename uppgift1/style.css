@@ -200,9 +200,11 @@ a:hover {
 /* services */
 .service-box {
         background: #ffffff;
+        border-radius: 10px;
+        align-items: center;
+
     }
-#services {
-        
+#services {  
         background: #f7f7f7;
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -224,6 +226,10 @@ a:hover {
                                   "b1 b2 b3"
                                   "b4 b5 b6";    
     }
+}
+.title {
+    border-bottom:4px solid #25E6C8;
+    text-align: center;
 }
 
 #service-title {
