@@ -26,11 +26,13 @@ html, body {
 }
 @media (min-width: 768px) {.container {max-width: 720px;} }
 @media (min-width: 1200px) {.container {max-width: 1120px;} }
+@media (min-width: 1920px) {.container {max-width: 1400px;} }
 
 a {
     color: #2BAAEC;
     text-decoration: none;
 }
+
 a:hover {
     color: #25E6C8;
 }
@@ -82,74 +84,72 @@ a:hover {
     margin: 0;
     }
 
-    #topmenu .container .socialmedia li {
+#topmenu .container .socialmedia li {
         margin-left: 1.3rem;
     }
 
 
 
-    /* Main Menu */
-
-    #mainmenu {
+/* Main Menu */
+#mainmenu {
         font-family: 'Roboto Slab', serif;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    @media (min-width: 768px) { #mainmenu { padding-top: 2rem; padding-bottom: 2rem; } }
+@media (min-width: 768px) { #mainmenu { padding-top: 2rem; padding-bottom: 2rem; } }
 
-    #mainmenu .container {
+#mainmenu .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    #mainmenu .container .logo {
+#mainmenu .container .logo {
         height: 50px;
     }
-    @media (min-width: 768px) { #mainmenu .container .logo { height: 60px; } }
+@media (min-width: 768px) { #mainmenu .container .logo { height: 60px; } }
 
-    
-    #mainmenu .container .menu {
+#mainmenu .container .menu {
         flex: 2;
         display: flex;
         justify-content: flex-end;
     }
 
-    #mainmenu .container .menu ul {
+#mainmenu .container .menu ul {
         display: none;
         list-style: none;
         margin: 0 ;
     }
-    @media (min-width: 992px) { #mainmenu .container .menu ul { display: flex;}}
+@media (min-width: 992px) { #mainmenu .container .menu ul { display: flex;}}
 
 
-    #mainmenu .container .menu ul li {
+#mainmenu .container .menu ul li {
         margin-left: 1.3rem;
     }
 
-    #mainmenu .container .menu ul li a {
+#mainmenu .container .menu ul li a {
         color: #363636;
     }
 
-    #mainmenu .container .menu ul li a:hover {
+#mainmenu .container .menu ul li a:hover {
         color: #25E6C8;
     }
 
-    #mainmenu .container .menu button {
+#mainmenu .container .menu button {
         font-size: 2.0rem;
         padding: 0;
     }
-    @media (min-width: 992px) { #mainmenu .container .menu button { display: none;}}
+@media (min-width: 992px) { #mainmenu .container .menu button { display: none;}}
     
 
 
-    /* Showcase */
-
-    #showcase {
+/* Showcase */
+#showcase {
         background-color: #DEDEDE;
+       
     }
 
-    #showcase .container {
+#showcase .container {
         font-family: 'Roboto Slab', serif;
         padding-top: 1.375rem;
         width: auto;
@@ -158,47 +158,67 @@ a:hover {
         column-gap: 9.375rem; 
         align-items: center;
         }
-        @media (min-width: 992px){
+@media (min-width: 992px){
             #showcase .container{ 
-            grid-template-columns: 1fr 1fr;}    
-        }
+            grid-template-columns: 1fr 1fr;
+            margin-left: 13.125rem ;}}
 
-        .figure1 {
+.figure1 {
             display: none;
-            margin-left: -3rem; 
+            margin-left: -3rem;
         }
-        @media (min-width:992px){.figure1{display: block;}}
+@media (min-width:992px){.figure1{display: block;}}
 
-        .about{
-            text-align: left;
+.about{ 
+            text-align: center;}
+@media (min-width:992px){.about{text-align: left;}}
+
+.btn {
+            background-color: #25E6C8;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18;
+            font-weight: bold;
+            padding: 14px 24px;
         }
 
 
-
-    /* About us */
+/* About us */
+#aboutus .container{
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+.figure2 {
+        display: none;
+        margin-left: -3rem;
+    }
+@media (min-width:992px){.figure2{display: block;}}
     
-    
 
-    /* services */
-    .service-box {
+
+/* services */
+.service-box {
         background: #ffffff;
     }
-    #services {
+#services {
+        
         background: #f7f7f7;
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
 
-    #services .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        text-align: center;
-        
-        gap: 1rem;
+#services .container {
+    display: none;      
     }
-    @media (min-width: 992px){
-        #services .container{ 
+@media (min-width: 992px){
+            #services .container{ 
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                text-align: center; 
+                gap: 1rem;
+            
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas:  "ti ti ti"
                                   "b1 b2 b3"
@@ -230,8 +250,51 @@ a:hover {
 
 
 
-/* Appointment /*
+/* Appointment */
+#appointment{
+    background-color: #2BAAEC;
+    opacity: 0.8;
+}
+
+#appointment .container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    color: #F7F7F7;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px; 
+}
+@media (min-width: 992px){#appointment .container{
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 12px;
+}}
+#appointment .container .btn{
+    display: none;
+    background-color:#FFFFFF;
+    color: #2BAAEC;
+    font-family: 'Roboto', sans-serif;
+    justify-content: flex-end;
+}
+@media (min-width: 992px){#appointment .container .btn{
+    display: block;
+}}
 
 
 
-/* Footer /*
+/* Footer */
+#footer{
+    background-color: #2BAAEC ;
+}
+#footer .container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    color: #F3FBFF;
+    text-align: center;
+    width: auto;
+    opacity: 0.6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
